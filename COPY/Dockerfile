@@ -6,6 +6,6 @@ RUN yum update -y
 RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 # you are copying app code
-ADD  https://github.com/tf-docker-k8/Dockerfiles/tree/master/COPY/qi
+ADD wget https://github.com/tf-docker-k8/Dockerfiles/tree/master/COPY/qi
 # you are staring server
 #CMD [ "nginx", "-g", "daemon off;" ]
