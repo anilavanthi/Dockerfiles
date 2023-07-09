@@ -1,4 +1,5 @@
 FROM almalinux:8
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz /tmp
-RUN tar -xzf apache-tomcat-9.0.76.tar.gz -C /opt
+ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.50/bin/apache-tomcat-9.0.50.tar.gz /tmp/
+RUN tar -xzvf /tmp/apache-tomcat-9.0.50.tar.gz -C /opt
+
 
